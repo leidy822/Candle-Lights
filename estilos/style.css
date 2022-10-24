@@ -155,10 +155,23 @@ main h1{
 
 /* Pagina nosotros */
 
-
 .video {
     padding: 20px;
     margin: 30px;
     text-align: center;    
 }
 
+@media screen and (min-width:768px) {
+.h_menu {
+    background-color: rgb(243, 242, 240) ;
+}
+
+.colecciones{
+    background-color: rgb(243, 242, 240) ;
+}
+
+
+.information{
+    background-color: rgb(243, 242, 240) ;
+}
+}
