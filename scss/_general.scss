@@ -8,7 +8,7 @@
 /* Pagina index */
 
 .h_menu{
-    background-color: #02a592;
+    background-color: $colorazul;
     list-style-type: none;
     padding: 10px;
     margin: 10px;
@@ -28,7 +28,7 @@
     text-decoration: none;
     display: block;
     padding: 5px;
-    color: black;
+    color: $colorblack;
 }
 
 .h_menu li a:hover{
@@ -36,10 +36,7 @@
 }
 
 .h_principal_banner{
-    background-position: center;
-    width: 100%;
-    height: 300px;
-
+    @include baner_principal(100%, 300px);
 }
 
 .h_menu img{
@@ -83,10 +80,9 @@
 
 .m_tipo_candles> div{
     background-color:#d3f4ed;
-}
-
-.m_tipo_candles div:hover {
-    border: 0.5px solid  rgb(5, 57, 87);
+    &:hover{
+        border: 0.5px solid  rgb(5, 57, 87);
+    }
 }
 
 .m_tipo_candles h3{
@@ -109,6 +105,19 @@
     text-align: center;
 }
 
+.div_tipos{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_tipos{
+    width: 50%;
+
+}
+
 /* Pagina index footer*/
  
 .information{
@@ -129,6 +138,7 @@
 .information img{
     width: 40px;
 }
+
 .f_image img{
     background-image: ("./imagenes/banner footer.png");
     height: 100%;
@@ -136,8 +146,7 @@
 }
 
 .foot img{
-    width: 100%;
-    height: 200px;
+    @include baner_principal (100%, 200px)
 }
 
 /* Pagina contacto */
@@ -169,7 +178,6 @@ main h1{
 .colecciones{
     background-color: rgb(243, 242, 240) ;
 }
-
 
 .information{
     background-color: rgb(243, 242, 240) ;

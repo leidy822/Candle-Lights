@@ -1,0 +1,23 @@
+{
+  "name": "candle_lights_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss:css",
+    "watch": "sass scss:css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leidy822/Candle-Lights.git"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0"
+  },
+  "author": "leidy cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leidy822/Candle-Lights/issues"
+  },
+  "homepage": "https://github.com/leidy822/Candle-Lights#readme"
+}

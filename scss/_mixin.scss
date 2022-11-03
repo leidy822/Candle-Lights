@@ -1,0 +1,5 @@
+@mixin baner_principal ($width, $height){
+    background-position: center;
+    width: $width;
+    height: $height;
+}
