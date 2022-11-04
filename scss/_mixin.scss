@@ -3,3 +3,8 @@
     width: $width;
     height: $height;
 }
+
+@mixin pad_marg {
+    padding: 10px;
+    margin: 10px;
+}

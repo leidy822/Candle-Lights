@@ -8,47 +8,42 @@
 /* Pagina index */
 
 .h_menu{
-    background-color: $colorazul;
+    background-color: $colordarkblue;
     list-style-type: none;
-    padding: 10px;
-    margin: 10px;
+    @include pad_marg;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-start;
 
-}
-
-.h_menu li{
+li{
     display: inline-block;
-
 }
-.h_menu li a{
+
+li a{
     text-decoration: none;
     display: block;
     padding: 5px;
     color: $colorblack;
 }
 
-.h_menu li a:hover{
- color: white;
+img{
+    width: 40px;
+    height: 50px;
+    position: relative;
+    
+}
 }
 
 .h_principal_banner{
     @include baner_principal(100%, 300px);
 }
 
-.h_menu img{
- width: 40px;
- height: 50px;
- position: relative;
-} 
-
 .h_principal_banner img{
     
-    padding: 10px;
-    margin: 10px;
+    @include pad_marg;
+    @include pad_marg;
     opacity: 0.8;
     width: 100%;
     height: 300px;
@@ -56,70 +51,48 @@
 }
 
 /* Pagina index main*/
-.m_parrafo{
+.carousel{
     margin: 30px;
-    text-align: center;
+    text-align: $aligncenter;
     display: block;
-    background-color: #b9f9ef;
-}
+    background-color: $colorlightblue;
 
-.colecciones{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 10px;
-    background-color:  #b9f9ef;
-    }
 
-.m_tipo_candles{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    gap: 10px;
-    grid-gap: 10px;
-}
-
-.m_tipo_candles> div{
-    background-color:#d3f4ed;
-    &:hover{
-        border: 0.5px solid  rgb(5, 57, 87);
-    }
-}
-
-.m_tipo_candles h3{
-    text-align: center;
+h3{
+    text-align: $aligncenter;
     margin-top: 30px;
     margin-bottom: 30px;
     text-decoration: underline;
 }
 
-.m_tipo_candles img{
-   width: 70%;
+img{
+   width: 40%;
    padding-bottom: 10px;
    padding-left: 120px;
-   justify-content: center;
+   justify-content: $aligncenter;
 } 
 
-.m_tipo_candles p{
+p{
     padding: 3px;
     margin: 3px;
-    text-align: center;
+    text-align: $aligncenter;
+}
 }
 
 .div_tipos{
     display: flex;
     flex-direction: column;
     padding: 1%;
-    justify-content: center;
-    align-items: center;
+    justify-content: $aligncenter;
+    align-items: $aligncenter;
 }
 
 .img_tipos{
     width: 50%;
-
 }
 
 /* Pagina index footer*/
- 
+
 .information{
     display: flex;
     flex-direction: row;
@@ -127,32 +100,27 @@
     padding: 20px;
     justify-content: flex-end;
 
-}
-
-.information> div{
+img{
+    width: 20px;
     padding: 5px;
-    width: 50px;
-    position: sticky; 
-}
-
-.information img{
+    width: 20px;
+    position: relative; 
     width: 40px;
 }
-
-.f_image img{
-    background-image: ("./imagenes/banner footer.png");
-    height: 100%;
-
 }
 
-.foot img{
+.foot{
+
+img{
+    background-image: ("./imagenes/banner footer.png");
     @include baner_principal (100%, 200px)
+}
 }
 
 /* Pagina contacto */
 
 main h1{
-    text-align: center;
+    text-align: $aligncenter;
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -167,19 +135,37 @@ main h1{
 .video {
     padding: 20px;
     margin: 30px;
-    text-align: center;    
+    text-align: $aligncenter;    
 }
+
+/*Blog*/
+
+main{
+    h3{
+        @include pad_marg;
+        text-align: center;
+    }
+}
+
+/*tienda*/
+.tienda_title{
+    text-align: center;
+    h2{
+        @include pad_marg;
+    }
+}
+
 
 @media screen and (min-width:768px) {
 .h_menu {
-    background-color: rgb(243, 242, 240) ;
+    background-color: $colorbeige ;
 }
 
 .colecciones{
-    background-color: rgb(243, 242, 240) ;
+    background-color: $colorbeige ;
 }
 
 .information{
-    background-color: rgb(243, 242, 240) ;
+    background-color: $colorbeige;
 }
 }
