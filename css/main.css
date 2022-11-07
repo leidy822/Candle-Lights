@@ -137,10 +137,21 @@ main h3 {
 /*tienda*/
 .tienda_title {
   text-align: center;
+  padding: 10px;
+  margin: 10px;
 }
 .tienda_title h2 {
   padding: 10px;
   margin: 10px;
+}
+
+.productos-6 .btn {
+  background-color: #02a592;
+}
+.productos-6 .card-img {
+  height: 80%;
+  width: 80%;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
