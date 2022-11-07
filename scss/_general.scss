@@ -50,6 +50,11 @@ img{
 
 }
 
+.m_parrafo{
+    padding: 30px;
+    text-align: center;
+}
+
 /* Pagina index main*/
 .carousel{
     margin: 30px;
@@ -110,7 +115,6 @@ img{
 }
 
 .foot{
-
 img{
     background-image: ("./imagenes/banner footer.png");
     @include baner_principal (100%, 200px)
@@ -132,20 +136,41 @@ main h1{
 
 /* Pagina nosotros */
 
-.video {
+.miranos{
+    text-align: $aligncenter;
     padding: 20px;
-    margin: 30px;
-    text-align: $aligncenter;    
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: $colorbeige;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    
 }
+
 
 /*Blog*/
 
-main{
-    h3{
+.carousel-inner{
+    img{
+        width: 60%;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+
+    h5{
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 10px;
+
+    }
+}
+
+
+ .bienvenidos{
         @include pad_marg;
         text-align: center;
     }
-}
+
 
 /*tienda*/
 
@@ -185,3 +210,5 @@ main{
     background-color: $colorbeige;
 }
 }
+
+

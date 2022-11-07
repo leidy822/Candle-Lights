@@ -48,6 +48,11 @@
   height: 300px;
 }
 
+.m_parrafo {
+  padding: 30px;
+  text-align: center;
+}
+
 /* Pagina index main*/
 .carousel {
   margin: 30px;
@@ -121,14 +126,29 @@ main h1 {
 }
 
 /* Pagina nosotros */
-.video {
-  padding: 20px;
-  margin: 30px;
+.miranos {
   text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: rgb(243, 242, 240);
+  text-decoration: underline;
+  text-decoration-color: aqua;
 }
 
 /*Blog*/
-main h3 {
+.carousel-inner img {
+  width: 60%;
+  align-content: center;
+  padding-bottom: 10px;
+}
+.carousel-inner h5 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.bienvenidos {
   padding: 10px;
   margin: 10px;
   text-align: center;
