@@ -9,8 +9,8 @@
 
 .h_menu{
     background-color: $colordarkblue;
-    list-style-type: none;
     @include pad_marg;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,7 +42,6 @@ img{
 
 .h_principal_banner img{
     
-    @include pad_marg;
     @include pad_marg;
     opacity: 0.8;
     width: 100%;
@@ -215,12 +214,11 @@ main h1{
 
 }
 
-
 @media screen and (min-width:768px) {
 .h_menu {
     background-color: $colorbeige ;
-}
 
+}
 .colecciones{
     background-color: $colorbeige ;
 }
@@ -230,4 +228,19 @@ main h1{
 }
 }
 
+@media screen and (max-width:560px) {
+.h_principal_banner img {
 
+    height: 250px;
+    width: 100%;
+
+}
+}
+@media screen and (max-width:400px) {
+
+.h_principal_banner img {
+    height: 200px;
+    width: 100%;
+
+}
+}  
