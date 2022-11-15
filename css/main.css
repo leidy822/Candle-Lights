@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Belleza", sans-serif;
 }
@@ -12,34 +11,21 @@
   padding: 10px;
   margin: 10px;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
-
 .h_menu li {
   display: inline-block;
 }
-
 .h_menu li a {
   text-decoration: none;
   display: block;
   padding: 5px;
   color: black;
 }
-
 .h_menu img {
   width: 40px;
   height: 50px;
@@ -72,23 +58,18 @@
   display: block;
   background-color: #b9f9ef;
 }
-
 .carousel h3 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   text-decoration: underline;
 }
-
 .carousel img {
   width: 40%;
   padding-bottom: 10px;
   padding-left: 120px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
-
 .carousel p {
   padding: 3px;
   margin: 3px;
@@ -96,19 +77,10 @@
 }
 
 .div_tipos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 1%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -118,20 +90,12 @@
 
 /* Pagina index footer*/
 .information {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   margin: 20px;
   padding: 20px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
-
 .information img {
   width: 20px;
   padding: 5px;
@@ -165,9 +129,8 @@ main h1 {
   padding: 20px;
   margin-top: 40px;
   margin-bottom: 20px;
-  background-color: #f3f2f0;
+  background-color: rgb(243, 242, 240);
   text-decoration: underline;
-  -webkit-text-decoration-color: aqua;
   text-decoration-color: aqua;
 }
 
@@ -191,11 +154,9 @@ main h1 {
 /*Blog*/
 .carousel-inner img {
   width: 60%;
-  -ms-flex-line-pack: center;
   align-content: center;
   padding-bottom: 10px;
 }
-
 .carousel-inner h5 {
   text-align: center;
   font-weight: bold;
@@ -214,7 +175,6 @@ main h1 {
   padding: 10px;
   margin: 10px;
 }
-
 .tienda_title h2 {
   padding: 10px;
   margin: 10px;
@@ -223,7 +183,6 @@ main h1 {
 .productos-6 .btn {
   background-color: #02a592;
 }
-
 .productos-6 .card-img {
   height: 80%;
   width: 80%;
@@ -232,13 +191,13 @@ main h1 {
 
 @media screen and (min-width: 768px) {
   .h_menu {
-    background-color: #f3f2f0;
+    background-color: rgb(243, 242, 240);
   }
   .colecciones {
-    background-color: #f3f2f0;
+    background-color: rgb(243, 242, 240);
   }
   .information {
-    background-color: #f3f2f0;
+    background-color: rgb(243, 242, 240);
   }
 }
 @media screen and (max-width: 560px) {
@@ -253,6 +212,5 @@ main h1 {
     width: 100%;
   }
 }
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
