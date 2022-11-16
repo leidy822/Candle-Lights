@@ -51,7 +51,6 @@
   text-align: center;
 }
 
-/* Pagina index main*/
 .carousel {
   margin: 30px;
   text-align: center;
@@ -63,12 +62,6 @@
   margin-top: 30px;
   margin-bottom: 30px;
   text-decoration: underline;
-}
-.carousel img {
-  width: 40%;
-  padding-bottom: 10px;
-  padding-left: 120px;
-  justify-content: center;
 }
 .carousel p {
   padding: 3px;
@@ -153,7 +146,7 @@ main h1 {
 
 /*Blog*/
 .carousel-inner img {
-  width: 60%;
+  width: 50%;
   align-content: center;
   padding-bottom: 10px;
 }
